@@ -29,9 +29,14 @@
     max-width: 100%;
   }
 
-  svg {
+  svg, img {
     display: block;
     width: 100%;
+    @include breakpoint(desktop) {
+      max-width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
