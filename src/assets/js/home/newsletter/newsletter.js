@@ -1,5 +1,4 @@
 import submitMailChimpForm from './submitMailChimpForm'
-import './displayMailChimpStatus'
 
 const newsletter = () => {
   document.addEventListener('submit', event => {

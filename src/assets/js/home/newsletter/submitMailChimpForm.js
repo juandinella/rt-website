@@ -1,23 +1,23 @@
 import serializeForm from './serializeForm'
+import fetchJsonp from 'fetch-jsonp'
+import displayMailChimpStatus from './displayMailChimpStatus'
 
 /**
  * Handle mailchimp gracefully
  * @tutorial https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
  */
-const submitMailChimpForm = form => {
+const submitMailChimpForm = async form => {
   let url = form.getAttribute('action')
   url = url.replace('/post?u=', '/post-json?u=')
-  url += serializeForm(form) + '&c=displayMailChimpStatus'
+  url += serializeForm(form)
 
-  // Create script with url and callback (if specified)
-  var script = window.document.createElement('script');
-  script.src = url;
-
-  // After the script is loaded (and executed), remove it
-  script.onload = function () {
-    this.remove();
-  };
-  document.body.appendChild(script)
+  try {
+    const res = await fetchJsonp(url, { jsonpCallback: 'c' })
+    const data = await res.json()
+    displayMailChimpStatus({ form, ...data })
+  } catch (e) {
+    console.log(e)
+  }
 }
 
 export default submitMailChimpForm
