@@ -173,6 +173,7 @@
 .button {
   @include reset-btn;
   display: block;
+  position: relative;
 }
 
 .iframe {
