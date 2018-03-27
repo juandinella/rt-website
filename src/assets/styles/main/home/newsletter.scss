@@ -41,6 +41,33 @@
   }
 }
 
+.validation {
+  background: $yellow;
+  color: #4E4641;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 10px 14px;
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 0;
+  transition: .25s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-60%);
+  &::before {
+    content: '';
+    @include size(13px);
+    border-radius: 3px;
+    background: $yellow;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -3px;
+    left: 23px;
+  }
+}
+
 .input {
   position: relative;
   padding-right: 20px;
