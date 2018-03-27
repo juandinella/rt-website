@@ -9,6 +9,9 @@
   padding: 50px 60px 40px;
   overflow: hidden;
   transition: .3s;
+  @include breakpoint(desktop) {
+    padding: 35px 30px;
+  }
 }
 
 .expanded {
@@ -23,6 +26,12 @@
   position: absolute;
   top: -47px;
   right: 30px;
+  @include breakpoint(desktop) {
+    font-size: 83px;
+    line-height: 105px;
+    right: 17px;
+    top: -37px;
+  }
 }
 
 .header {
@@ -69,6 +78,9 @@
 
   svg {
     margin-left: 10px;
+    @include breakpoint(desktop) {
+      display: none;
+    }
   }
 }
 
@@ -115,4 +127,21 @@
 
 .rotated {
   transform: rotate(180deg);
+}
+
+.floaty {
+  display: none;
+  @include breakpoint(desktop) {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 40px;
+    background: $black;
+    color: $white;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    border-radius: 3px;
+  }
 }
