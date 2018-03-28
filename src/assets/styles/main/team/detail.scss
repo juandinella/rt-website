@@ -26,6 +26,7 @@
     background: $white;
     padding-top: 80px;
     margin-bottom: 40px;
+    padding-bottom: 0;
   }
 }
 
@@ -96,6 +97,12 @@
   margin-left: auto;
   margin-right: auto;
   max-height: 890px;
+
+  @include breakpoint(desktop) {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .info {
@@ -175,6 +182,9 @@
   display: flex;
   align-items: center;
   position: relative;
+  @include breakpoint(desktop) {
+    margin-top: auto;
+  }
 }
 
 .foot-btn {

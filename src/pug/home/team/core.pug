@@ -7,40 +7,39 @@ mixin core({img, name, title})
     h4= name
     p= title
 
-div(css-module='team.core.container')
-  div(css-module='team.core.row')
-    +core({
-      img: 'kalin.png',
-      name: 'Kaling Stoyanchev',
-      title: 'Project Lead'
-    })
-    +core({
-      img: 'charlie.png',
-      name: 'Charlie Wallace',
-      title: 'Chief Science Officer'
-    })
-    +core({
-      name: 'Akram Abdou',
-      img: 'akram.jpg',
-      title: 'Project Manager'
-    })
-    +core({
-      img: 'adam.png',
-      name: 'Adam Bodnar',
-      title: 'Developer'
-    })
-    +core({
-      img: 'kevin.png',
-      name: 'Kevin Bockman',
-      title: 'Developer'
-    })
-    +core({
-      name: 'Tim Maclean',
-      img: 'tim.jpg',
-      title: 'Developer'
-    })
-    +core({
-      name: 'Daniel Torres',
-      title: 'Developer',
-      img: 'daniel.jpg'
-    })
+div(css-module='team.core.row')
+  +core({
+    img: 'kalin.png',
+    name: 'Kaling Stoyanchev',
+    title: 'Project Lead'
+  })
+  +core({
+    img: 'charlie.png',
+    name: 'Charlie Wallace',
+    title: 'Chief Science Officer'
+  })
+  +core({
+    name: 'Akram Abdou',
+    img: 'akram.jpg',
+    title: 'Project Manager'
+  })
+  +core({
+    img: 'adam.png',
+    name: 'Adam Bodnar',
+    title: 'Developer'
+  })
+  +core({
+    img: 'kevin.png',
+    name: 'Kevin Bockman',
+    title: 'Developer'
+  })
+  +core({
+    name: 'Tim Maclean',
+    img: 'tim.jpg',
+    title: 'Developer'
+  })
+  +core({
+    name: 'Daniel Torres',
+    title: 'Developer',
+    img: 'daniel.jpg'
+  })
