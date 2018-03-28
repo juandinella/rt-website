@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 -57px 27px;
+  margin: 0 -30px 27px;
 
   @include breakpoint(desktop) {
     margin: 0 -15px;
@@ -12,9 +12,9 @@
 }
 
 .advisor {
-  flex-basis: 275px;
-  max-width: 275px;
-  padding: 0 57px;
+  flex-basis: 220px;
+  max-width: 220px;
+  padding: 0 30px;
   margin-bottom: 55px;
 
   @include breakpoint(desktop) {
