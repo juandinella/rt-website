@@ -4,10 +4,12 @@ section#ctas(css-module='home.ctas.wrapper')
       div(css-module='home.ctas.half')
         h4(css-module='home.ctas.title') Subscribe to receive news & updates.
         form(action="//rendertoken.us8.list-manage.com/subscribe/post?u=ad680289b0bef29e06c64f0c6&amp;id=6768cf3682" method='POST')
-          div(css-module='home.ctas.input')
+          div(css-module='home.newsletter.input')
             input(type='email' placeholder='Enter your email address for updates' name='EMAIL')
             button(type='submit')
               +svg('arrow-right')
+            span(css-module='home.newsletter.validation')
+              | This email address is invalid
 
       div(css-module='home.ctas.half')
         h4(css-module='home.ctas.title') Join the community at Rocket.Chat
