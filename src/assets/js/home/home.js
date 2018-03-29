@@ -5,6 +5,7 @@ import roadmap from './roadmap'
 import problem from './problem'
 import burger from './burger'
 import newsletter from './newsletter'
+import subscribe from './subscribe'
 
 const home = () => {
   navigation()
@@ -14,6 +15,7 @@ const home = () => {
   roadmap()
   problem()
   newsletter()
+  subscribe()
 }
 
 export default home
