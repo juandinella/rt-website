@@ -12,7 +12,7 @@
 
 .row {
   display: flex;
-  margin: 0 -10px;
+  margin: 0 -30px;
 
   @include breakpoint(desktop) {
     display: block;
@@ -21,7 +21,7 @@
 }
 
 .hafu {
-  padding: 0 10px;
+  padding: 0 30px;
   flex-basis: 50%;
   max-width: 50%;
   @include breakpoint(desktop) {
