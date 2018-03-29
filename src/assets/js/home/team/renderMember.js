@@ -23,6 +23,12 @@ const renderMember = id => {
 
   const detail = team.detail
 
+  const prevMember = members[prevId]
+  const nextMember = members[nextId]
+
+  const prevInfo = scrapMemberInfo(prevMember)
+  const nextInfo = scrapMemberInfo(nextMember)
+
   // Gather all places we need to render
   const nameContainer = moduleSelector(detail.name)
   const titleContainer = moduleSelector(detail.title)
@@ -31,6 +37,11 @@ const renderMember = id => {
   const imgContainer = moduleSelector(detail.pic)
   const prevButton = moduleSelector(detail.prev)
   const nextButton = moduleSelector(detail.next)
+
+  const prevNameContainer = prevButton.querySelector('h4')
+  const prevTitleContainer = prevButton.querySelector('h6')
+  const nextNameContainer = nextButton.querySelector('h4')
+  const nextTitleContainer = nextButton.querySelector('h6')
 
   const renderer = ({ data, target }) => {
     target.innerHTML = data || ''
@@ -46,6 +57,10 @@ const renderMember = id => {
     : `<svg width="119" height="119" viewBox="0 0 119 119"><rect width="119" height="119" x="21" fill="#E8EDF0" fill-rule="evenodd" rx="5" transform="translate(-21)"/></svg>`
   prevButton.setAttribute('data-id', Number(prevId))
   nextButton.setAttribute('data-id', Number(nextId))
+  renderer({ data: prevInfo.name, target: prevNameContainer })
+  renderer({ data: prevInfo.role, target: prevTitleContainer })
+  renderer({ data: nextInfo.name, target: nextNameContainer })
+  renderer({ data: nextInfo.role, target: nextTitleContainer })
 }
 
 export default renderMember

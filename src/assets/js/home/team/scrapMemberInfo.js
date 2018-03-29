@@ -13,7 +13,8 @@ const scrapMemberInfo = member => {
     title: getText(title),
     extra: getText(extra),
     info: info ? info.innerHTML : false,
-    picture: picture ? picture.getAttribute('src') : false
+    picture: picture ? picture.getAttribute('src') : false,
+    role: member.getAttribute('data-role')
   }
 }
 
