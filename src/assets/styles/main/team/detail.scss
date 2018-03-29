@@ -13,7 +13,6 @@
   width: 100%;
   min-height: 100vh;
   z-index: 11;
-  background: rgba($black, 0.9);
   padding-top: (45px + 110px);
   padding-bottom: 45px;
   transition: .3s;
@@ -27,6 +26,18 @@
     padding-top: 80px;
     margin-bottom: 40px;
     padding-bottom: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include size(100%);
+  background: rgba($black, 0.9);
+  z-index: -1;
+  @include breakpoint(desktop) {
+    display: none;
   }
 }
 
