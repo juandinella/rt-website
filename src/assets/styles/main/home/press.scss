@@ -28,8 +28,14 @@
 }
 
 .media {
+
   a {
     display: block;
+    filter: grayscale(100%);
+
+    &:hover, &:focus {
+      filter: grayscale(0%);
+    }
   }
 
   svg, img {
