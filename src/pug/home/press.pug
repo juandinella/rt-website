@@ -1,6 +1,6 @@
 mixin press(name, link)
   div(css-module='home.press.media')
-    a(href=link)
+    a(target='_blank' rel='noopener noreferrer' href=link)
       +svg(name)
 
 section#press(css-module='home.press.wrapper')
