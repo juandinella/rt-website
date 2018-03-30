@@ -5,7 +5,9 @@ const asyncFonts = async ({ href, observer }) => {
   if (href) {
     const link = document.createElement('link')
     link.href = href
-    link.rel = 'stylesheet'
+    // Google is a drama queen now
+    link.rel = 'preload'
+    link.as = 'style'
     document.head.appendChild(link)
   }
 
