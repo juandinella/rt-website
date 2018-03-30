@@ -9,7 +9,7 @@ mixin svg(filename, ...attributes)
   !=icon(filename, ...attributes)
 
 mixin img(name, module, alt)
-  img(src=`assets/images/${name}` css-module=module alt= alt ? alt : 'An image')
+  !=blur(name, module, alt)
 
 mixin link(url)
   a(href=url)= url

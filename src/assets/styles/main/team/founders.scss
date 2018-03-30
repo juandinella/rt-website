@@ -29,12 +29,14 @@
     @include reset-btn;
   }
 
-  img, svg {
+  img {
     display: block;
-    width: 100%;
+    @include size(320px);
     margin-bottom: 44px;
+    border-radius: 5px;
     @include breakpoint(desktop) {
       margin-bottom: 15px;
+      @include size(169px);
     }
   }
 

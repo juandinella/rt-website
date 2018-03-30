@@ -25,6 +25,15 @@
 
   img {
     max-width: 100%;
+
+    &.lazyload {
+      filter: blur(2px);
+      transition: .2s;
+    }
+
+    &.lazyloaded {
+      filter: blur(0);
+    }
   }
 
   .is-hidden {

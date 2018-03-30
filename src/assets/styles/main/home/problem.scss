@@ -125,6 +125,7 @@
   }
   svg, img {
     display: block;
+    @include size(100%);
   }
 }
 
