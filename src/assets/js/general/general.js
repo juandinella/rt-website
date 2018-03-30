@@ -1,5 +1,5 @@
 import asyncFonts from '../tools/async-fonts'
-// import gtm from './gtm'
+import gtm from './gtm'
 import smoothScroll from './smooth-scroll'
 
 const general = () => {
@@ -14,7 +14,7 @@ const general = () => {
 
   smoothScroll()
 
-  // gtm()
+  gtm()
 }
 
 export default general

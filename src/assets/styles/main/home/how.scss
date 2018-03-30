@@ -147,10 +147,7 @@
 .icons {
   display: flex;
   flex-wrap: wrap;
-
-  @include breakpoint(desktop) {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .sector {
