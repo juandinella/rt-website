@@ -25,10 +25,10 @@
 
   img {
     max-width: 100%;
+    transition: .2s;
 
     &.lazyload {
       filter: blur(2px);
-      transition: .2s;
     }
 
     &.lazyloaded {
