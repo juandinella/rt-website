@@ -10,7 +10,7 @@ const overlays = () => {
 
     if (isTrigger) open(element)
     if (isCloseBtn) close(element)
-  })
+  }, false)
 }
 
 export default overlays
