@@ -4,10 +4,19 @@ import loopQuery from '../../tools/loopQuery'
 import { parseInput, resetInput } from './parseEmail'
 
 const newsletter = () => {
+  // Disable native validation
+  var forms = document.querySelectorAll('form');
+  for (var i = 0; i < forms.length; i++) {
+    forms[i].setAttribute('novalidate', true)
+  }
+
   // Submit handlers
   document.addEventListener('submit', event => {
     event.preventDefault()
-    submitMailChimpForm(event.target)
+    const form = event.target
+    const input = form.querySelector('input')
+    const valid = parseInput(input)
+    return valid && submitMailChimpForm(form)
   }, false)
 
   const inputs = document.querySelectorAll(`.${home.newsletter.input} input`)
@@ -22,6 +31,13 @@ const newsletter = () => {
   // Focus handler
   loopQuery(inputs, input => {
     input.addEventListener('focus', event => {
+      resetInput(event.target)
+    })
+  })
+
+  // Change
+  loopQuery(inputs, input => {
+    input.addEventListener('input', event => {
       resetInput(event.target)
     })
   })
