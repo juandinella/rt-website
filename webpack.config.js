@@ -63,16 +63,36 @@ const normalConfig = {
         include: paths.src
       },
       {
-        test: /\.(js|jsx|mjs)$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              require.resolve('@pixel2html/babel-preset')
-            ],
-            cacheDirectory: true
+        oneOf: [
+          // Parse OUR js
+          {
+            test: /\.(js|jsx|mjs)$/,
+            include: paths.src,
+            exclude: [/[/\\\\]node_modules[/\\\\]/],
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: [
+                  require.resolve('@pixel2html/babel-preset')
+                ],
+                cacheDirectory: true
+              }
+            }
+          },
+          // Parse VENDOR js
+          {
+            test: /\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: [
+                  require.resolve('@pixel2html/babel-preset/dependencies')
+                ],
+                cacheDirectory: true
+              }
+            }
           }
-        }
+        ]
       }
     ]},
   output: {
