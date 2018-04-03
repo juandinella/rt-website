@@ -23,6 +23,10 @@ section#problem(css-module='home.problem.wrapper')
     div(css-module='home.problem.divider')
       +svg('divider')
 
+  svg(width='100' height='2' viewBox='0 0 100 2' preserveAspectRatio='none' css-module='home.problem.line')
+    rect(x='0' width='100' height='2' fill='#F4F4F5')
+    rect(x='0' width='25' height='2' css-module='home.problem.red')
+  .container-1060
     div(css-module='home.problem.problems')
       +problem({
         icon: 'scale',
