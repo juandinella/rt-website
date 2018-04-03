@@ -4,8 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include breakpoint(desktop) {
-    display: none;
+    flex-wrap: wrap;
+    margin: 34px -20px 0;
   }
 }
 
@@ -15,12 +17,28 @@
   justify-content: center;
 
   margin-right: 80px;
+
+  @include breakpoint(desktop) {
+    max-width: 50%;
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 34px;
+    display: block;
+  }
 }
 
 .icon {
   margin-right: 23px;
+  @include breakpoint(desktop) {
+    margin: 0 auto 10px;
+  }
   svg {
     display: block;
+    @include breakpoint(desktop) {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -28,9 +46,20 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
+
+  @include breakpoint(desktop) {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 .subtitle {
   font-size: 14px;
   line-height: 18px;
+
+  @include breakpoint(desktop) {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
