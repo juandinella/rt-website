@@ -11,9 +11,11 @@ mixin svg(filename, ...attributes)
 mixin img(name, module, alt)
   !=blur(name, module, alt)
 
-// To use for above the fold images
+//- To use for above the fold images
 mixin vipImg(name, module, alt)
   img(src=`assets/images/${name}` css-module=module alt= alt ? alt : 'An image')
 
 mixin link(url)
   a(href=url)= url
+
+include overlay

@@ -1,0 +1,13 @@
+mixin overlayHeader(title)
+  div(css-module='components.overlay.header')
+    +svg('verti-overlay')
+    h6(css-module='components.overlay.title')= title
+    button(css-module='components.overlay.close'): +svg('close')
+
+mixin overlay(title)
+  div(css-module='components.overlay.wrapper' id=`${title}-overlay`)
+    +overlayHeader(title)
+    div(css-module='components.overlay.content')
+      if block
+        block
+    +overlayHeader(title)

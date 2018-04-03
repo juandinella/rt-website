@@ -7,7 +7,7 @@ section#about(css-module='home.about.wrapper')
     div(css-module='home.about.row')
       div(css-module='home.about.column')
         h2(css-module='home.about.summary') OTOY provides GPU-based software solutions that aid in the creation and delivery of cutting-edge digital content.
-        //- button(css-module='home.about.more') Learn more
+        button(css-module='home.about.more' data-overlay='#About-overlay') Learn more
         div(css-module='home.about.dash')
           +svg('dash')
         p OctaneRender is the world’s first and fastest GPU-accelerated, unbiased, physically correct renderer. Octane uses the graphics card in your computer to render photo-realistic images super fast. With Octane’s parallel compute capabilities, you can create stunning works in a fraction of the time.
@@ -19,3 +19,7 @@ section#about(css-module='home.about.wrapper')
       +svg('divider')
 
     include stats
+  +overlay('About')
+    p OctaneRender is the world’s first and fastest GPU-accelerated, unbiased, physically correct renderer. Octane uses the graphics card in your computer to render photo-realistic images super fast. With Octane’s parallel compute capabilities, you can create stunning works in a fraction of the time.
+    p OTOY’s Academy Award®-winning technology is used by leading visual effects studios, artists, animators, designers, architects, and engineers, providing unprecedented creative freedom, new levels of realism, and new economics in content creation and distribution powered by the cloud.
+    p OTOY was founded in 2008 by Jules Urbach, Alissa Grainger and Malcolm Taylor. Since then, the company has grown to over 60 employees across four offices with headquarters in Los Angeles, CA.

@@ -7,11 +7,13 @@ import burger from './burger'
 import newsletter from './newsletter'
 import subscribe from './subscribe'
 import mobileLinks from './mobileLinks'
+import overlays from './overlays'
 
 const home = () => {
   navigation()
   burger()
   mobileLinks()
+  overlays()
   video()
   team()
   roadmap()
