@@ -72,10 +72,10 @@ const normalConfig = {
             use: {
               loader: 'babel-loader',
               options: {
-                presets: [
-                  require.resolve('@pixel2html/babel-preset')
-                ],
-                cacheDirectory: true
+                babelrc: false,
+                presets: [require.resolve('@pixel2html/babel-preset')],
+                compact: true,
+                highlightCode: true,
               }
             }
           },
@@ -85,10 +85,11 @@ const normalConfig = {
             use: {
               loader: 'babel-loader',
               options: {
-                presets: [
-                  require.resolve('@pixel2html/babel-preset/dependencies')
-                ],
-                cacheDirectory: true
+                babelrc: false,
+                compact: false,
+                presets: [require.resolve('@pixel2html/babel-preset/dependencies')],
+                cacheDirectory: true,
+                highlightCode: true,
               }
             }
           }
@@ -124,7 +125,10 @@ const normalConfig = {
     }
   },
   bail: shouldBeDebugMode,
-  mode: production ? 'production' : 'development'
+  mode: production ? 'production' : 'development',
+  performance: {
+    hints: shouldBeDebugMode ? 'warning' : false
+  },
 }
 
 module.exports = [
