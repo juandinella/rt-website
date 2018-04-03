@@ -129,6 +129,10 @@
     padding: 6px 14px;
   }
 
+  > * {
+    pointer-events: none;
+  }
+
   svg {
     margin-left: 6px;
   }
