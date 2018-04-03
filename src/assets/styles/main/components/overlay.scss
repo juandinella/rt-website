@@ -2,24 +2,24 @@
 
 .wrapper {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: $white;
+  min-height: 100vh;
+  z-index: 11;
+  transition: .3s;
+  padding: 10px 40px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
   @include breakpoint(desktop) {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    background: $white;
-    min-height: 100vh;
-    z-index: 11;
-    transition: .3s;
-    padding: 10px 40px;
-    overflow-y: auto;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
   }
 }
 

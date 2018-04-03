@@ -5,7 +5,9 @@ const open = button => {
 
   const overlay = document.querySelector(id)
 
-  if (overlay) overlay.classList.add(components.overlay.active)
+  const activeClass = components.overlay.active
+
+  if (overlay) overlay.classList.add(activeClass)
 }
 
 export default open
