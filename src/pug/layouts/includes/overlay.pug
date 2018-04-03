@@ -5,7 +5,7 @@ mixin overlayHeader(title)
     button(css-module='components.overlay.close'): +svg('close')
 
 mixin overlay(title)
-  div(css-module='components.overlay.wrapper' id=`${title}-overlay`)
+  div(css-module='components.overlay.wrapper' id=`${title.split(' ').join('-')}-overlay`)
     +overlayHeader(title)
     div(css-module='components.overlay.content')
       if block

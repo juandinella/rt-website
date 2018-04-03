@@ -88,6 +88,12 @@
   @include breakpoint(desktop) {
     @include reset-btn;
     display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  > * {
+    pointer-events: none;
   }
 }
 
@@ -191,4 +197,37 @@
     font-weight: 900;
     margin-top: auto;
   }
+}
+
+.instructions {
+  color: $cool-gray;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  svg {
+    margin-left: 7px;
+  }
+}
+
+.scroll {
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  overflow: hidden;
+  margin-bottom: 31px;
+}
+
+.overflow {
+  overflow-x: auto;
+}
+
+.info-pic {
+  max-height: 462px;
+  max-width: none;
 }

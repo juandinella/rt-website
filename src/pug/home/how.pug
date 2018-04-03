@@ -15,7 +15,7 @@ section#how(css-module='home.how.wrapper')
     div(css-module='home.how.infographic')
       +svg('infographic')
 
-    a(href='assets/images/infographic.jpg' css-module='home.how.trigger')
+    button(css-module='home.how.trigger' data-overlay='#The-Render-Ecosystem-overlay')
       +svg('flowchart', { 'css-module': 'home.how.flowchart' })
 
     div(css-module='home.how.copy')
@@ -55,3 +55,12 @@ section#how(css-module='home.how.wrapper')
         })
 
   +img('close.png', 'home.roadmap.gears')
+
+  +overlay('The Render Ecosystem')
+    span(css-module='home.how.instructions')
+      | Swipe left and right to scroll
+      +svg('scroll')
+    div(css-module='home.how.scroll')
+      div(css-module='home.how.overflow')
+        +img('infographic.jpg', 'home.how.info-pic')
+    p Ethereum’s widespread adoption was the key to realizing our vision. Instead of GPUs being used to only mine currencies, we use their intrinsic function to render and leverage the features of the blockchain: network, incentives and trust.

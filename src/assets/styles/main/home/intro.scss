@@ -178,6 +178,7 @@
 .button {
   @include reset-btn;
   display: block;
+  width: 100%;
   position: relative;
 }
 
