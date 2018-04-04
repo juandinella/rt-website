@@ -112,6 +112,7 @@
 
   @include breakpoint(desktop) {
     padding: 0;
+    padding-bottom: 15px;
     max-width: 100%;
     margin-bottom: 0;
   }
