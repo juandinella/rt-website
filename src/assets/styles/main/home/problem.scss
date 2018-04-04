@@ -109,6 +109,7 @@
   flex-basis: 50%;
   max-width: 50%;
   margin-bottom: 70px;
+  outline: none;
 
   @include breakpoint(desktop) {
     padding: 0;
