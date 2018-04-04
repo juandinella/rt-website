@@ -59,6 +59,10 @@
   margin-right: auto;
   text-align: center;
 
+  @include breakpoint(laptop) {
+    padding-top: 40px;
+  }
+
   @include breakpoint(desktop) {
     padding-top: 0;
     max-width: 245px;
@@ -139,14 +143,20 @@
 }
 
 .video {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: percentage(800/1440);
 
-  @include breakpoint(desktop) {
+  @include breakpoint(hd) {
+    width: percentage(800/1440);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @include breakpoint(laptop) {
     position: relative;
     width: 100%;
+  }
+
+  @include breakpoint(desktop) {
     margin-bottom: 33px;
   }
 
@@ -199,12 +209,20 @@
 }
 
 .copy {
-  padding: 100px 0;
   font-size: 15px;
   line-height: 28px;
   max-width: 460px;
   margin-left: auto;
   margin-right: auto;
+  padding: 70px 0;
+
+  @include breakpoint(hd) {
+    padding: 100px 0;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 40px 0;
+  }
 
   @include breakpoint(desktop) {
     display: none;
