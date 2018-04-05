@@ -8,7 +8,7 @@ import newsletter from './newsletter'
 import subscribe from './subscribe'
 import mobileLinks from './mobileLinks'
 import overlays from './overlays'
-import drawingIcons from './drawingIcons'
+import animeDraw from './animeDraw'
 
 import { home as styles } from 'styles'
 
@@ -16,9 +16,9 @@ const home = () => {
   navigation()
   burger()
   mobileLinks()
-  drawingIcons(`.${styles.problem.icon} svg`)
-  drawingIcons(`.${styles.stats.icon} svg`)
-  drawingIcons(`.${styles.how['sector-icon']} svg`)
+  animeDraw(`.${styles.problem.icon} svg`)
+  animeDraw(`.${styles.stats.icon} svg`)
+  animeDraw(`.${styles.how['sector-icon']} svg`)
   overlays()
   video()
   team()
