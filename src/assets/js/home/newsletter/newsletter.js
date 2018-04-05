@@ -1,7 +1,7 @@
 import submitMailChimpForm from './submitMailChimpForm'
 import { home } from 'styles'
 import loopQuery from '../../tools/loopQuery'
-import { parseInput, resetInput } from './parseEmail'
+import { parseInput, resetInput, validEmail } from './parseEmail'
 
 const newsletter = () => {
   // Disable native validation
@@ -15,8 +15,11 @@ const newsletter = () => {
     event.preventDefault()
     const form = event.target
     const input = form.querySelector('input')
-    const valid = parseInput(input)
-    return valid && submitMailChimpForm(form)
+    if (validEmail(input)) {
+      submitMailChimpForm(form)
+    } else {
+      parseInput(input)
+    }
   }, false)
 
   const inputs = document.querySelectorAll(`.${home.newsletter.input} input`)

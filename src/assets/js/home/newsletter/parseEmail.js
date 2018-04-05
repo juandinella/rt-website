@@ -6,9 +6,13 @@ import { invalidEmail, resetEmail } from './inputStatus'
  */
 export const parseInput = input => {
   const wrapper = input.parentElement
+  if (!validEmail(input)) invalidEmail(wrapper)
+}
+
+export const validEmail = input => {
   const value = input.value
   const valid = input.validity.valid
-  return value && !valid && invalidEmail(wrapper)
+  return value && valid
 }
 
 /**
