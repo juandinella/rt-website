@@ -9,10 +9,15 @@ export const parseInput = input => {
   if (!validEmail(input)) invalidEmail(wrapper)
 }
 
+/**
+ * Check for valid Email
+ * @param {HTMLElement} input
+ */
 export const validEmail = input => {
   const value = input.value
   const valid = input.validity.valid
-  return value && valid
+  if (!value) return true
+  return valid
 }
 
 /**

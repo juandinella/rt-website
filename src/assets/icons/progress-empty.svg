@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388" height="98" viewBox="0 0 388 98">
+  <defs>
+    <linearGradient id="progress-empty-a" x1="100%" x2="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#B61D3B"/>
+      <stop offset="100%" stop-color="#E62249"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g fill="#242B35" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="12" font-weight="bold" transform="translate(33 70)">
+      <g transform="translate(269)">
+        <text>
+          <tspan x=".974" y="12">Community</tspan>
+        </text>
+        <text>
+          <tspan x="20.678" y="27">Sale</tspan>
+        </text>
+      </g>
+      <g transform="translate(142)">
+        <text>
+          <tspan x=".01" y="12">Private</tspan>
+        </text>
+        <text>
+          <tspan x="7.678" y="27">Sale</tspan>
+        </text>
+      </g>
+      <text>
+        <tspan x=".552" y="12">Genesis</tspan>
+      </text>
+      <text>
+        <tspan x="9.678" y="27">Sale</tspan>
+      </text>
+    </g>
+    <rect width="388" height="52" y="6" fill="#537987" fill-opacity=".1" fill-rule="nonzero" rx="26"/>
+    <rect width="368" height="32" x="10" y="16" fill="#FFF" fill-rule="nonzero" opacity=".406" rx="16"/>
+    <path fill="url(#progress-empty-a)" fill-rule="nonzero" d="M26.1151079,16 L26.1151079,48 C17.2149796,48 10,40.836556 10,32 C10,23.163444 17.2149796,16 26.1151079,16 Z"/>
+    <text fill="#FFF" font-family="SourceSansPro-Black, Source Sans Pro" font-size="15" font-weight="700" transform="translate(165 20)">
+      <tspan x=".68" y="15.5">Ongoing</tspan>
+    </text>
+    <text fill="#FFF" font-family="SourceSansPro-Black, Source Sans Pro" font-size="15" font-weight="700" transform="translate(30 20)">
+      <tspan x=".225" y="15.5">4K ETH</tspan>
+    </text>
+    <rect width="2" height="64" fill="#000" fill-rule="nonzero" rx="1" transform="translate(288)"/>
+    <rect width="2" height="64" fill="#242B35" fill-rule="nonzero" rx="1" transform="translate(288)"/>
+    <g fill-rule="nonzero" transform="translate(98)">
+      <rect width="2" height="64" fill="#000" rx="1"/>
+      <rect width="2" height="64" fill="#242B35" rx="1"/>
+    </g>
+  </g>
+</svg>

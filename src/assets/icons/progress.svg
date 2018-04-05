@@ -31,7 +31,7 @@
     </g>
     <rect width="388" height="52" y="6" fill="#537987" fill-opacity=".1" rx="26"/>
     <rect width="368" height="32" x="10" y="16" fill="#FFF" opacity=".406" rx="16"/>
-    <path fill="url(#progress-a)" d="M26,16 L288,16 L288,48 L26,48 C17.163444,48 10,40.836556 10,32 L10,32 C10,23.163444 17.163444,16 26,16 Z"/>
+    <path class="progress-bar" fill="url(#progress-a)" d="M26,16 L288,16 L288,48 L26,48 C17.163444,48 10,40.836556 10,32 L10,32 C10,23.163444 17.163444,16 26,16 Z"/>
     <text fill="#FFF" font-family="Source Sans Pro" font-size="15" font-weight="700">
       <tspan x="165.68" y="35.5">Ongoing</tspan>
     </text>
