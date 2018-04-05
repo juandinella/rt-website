@@ -46,6 +46,7 @@
     "smooth-scroll": "^12.1.5",
     "tiny-slider": "^2.6.0",
     "uglifyjs-webpack-plugin": "^1.2.4",
+    "vivus": "^0.4.3",
     "webpack": "^4.4.1",
     "whatwg-fetch": "^2.0.4",
     "yargs": "^11.0.0",

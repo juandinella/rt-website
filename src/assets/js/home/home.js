@@ -8,6 +8,7 @@ import newsletter from './newsletter'
 import subscribe from './subscribe'
 import mobileLinks from './mobileLinks'
 import overlays from './overlays'
+import drawingIcons from './drawingIcons'
 
 const home = () => {
   navigation()
@@ -18,6 +19,7 @@ const home = () => {
   team()
   roadmap()
   problem()
+  drawingIcons()
   newsletter()
   subscribe()
 }
