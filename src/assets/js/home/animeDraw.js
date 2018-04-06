@@ -4,11 +4,11 @@ import onVisibilityChange from '../tools/onVisibilityChange'
 import listen from '../tools/listen'
 import removeEvent from '../tools/removeEvent'
 
-const animeDraw = query =>
+const animeDraw = (query, svgQuery = '[stroke]') =>
   loopQuery(document.querySelectorAll(query), icon => {
     const handler = onVisibilityChange(icon, () => {
       anime({
-        targets: icon.querySelectorAll('[stroke]'),
+        targets: icon.querySelectorAll(svgQuery),
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'easeInOutSine',
         duration: 1500,

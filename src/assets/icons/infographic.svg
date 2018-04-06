@@ -62,7 +62,7 @@
         </text>
         <g transform="translate(191 92)">
           <circle cx="30" cy="30" r="30" fill="#B22240" opacity=".65"/>
-          <g stroke="#FFF" stroke-width="2" transform="translate(14 14)">
+          <g stroke="#FFF" stroke-width="2" transform="translate(14 14)" class="blockchain">
             <circle cx="16" cy="29" r="3"/>
             <circle cx="16" cy="16" r="3"/>
             <circle cx="16" cy="3" r="3"/>
@@ -82,7 +82,7 @@
         <path fill="#FFF" d="M155,121 L155,119 C155,118.447715 155.447715,118 156,118 C156.552285,118 157,118.447715 157,119 L157,121 L159,121 C159.552285,121 160,121.447715 160,122 C160,122.552285 159.552285,123 159,123 L157,123 L157,125 C157,125.552285 156.552285,126 156,126 C155.447715,126 155,125.552285 155,125 L155,123 L153,123 C152.447715,123 152,122.552285 152,122 C152,121.447715 152.447715,121 153,121 L155,121 Z"/>
         <g transform="translate(61 92)">
           <circle cx="30" cy="30" r="30" fill="#B22240" opacity=".65"/>
-          <g stroke="#FFF" stroke-linecap="round" stroke-width="2" transform="translate(19 12.5)">
+          <g stroke="#FFF" stroke-linecap="round" stroke-width="2" transform="translate(19 12.5)" class="ethereum">
             <polygon stroke-linejoin="round" points=".5 16.3 11 0 21.5 16.3 11 22"/>
             <path d="M11.0016713,0.5 L10.9983287,21.5"/>
             <polyline points="1 16 11 11.5 21 16"/>
