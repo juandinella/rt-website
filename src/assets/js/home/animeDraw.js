@@ -4,7 +4,12 @@ import onVisibilityChange from '../tools/onVisibilityChange'
 import listen from '../tools/listen'
 import removeEvent from '../tools/removeEvent'
 
-const animeDraw = (query, svgQuery = '[stroke]') =>
+const animeDraw = ({
+  query,
+  svgQuery = '[stroke]',
+  loop = false,
+  ...animeStuff
+}) =>
   loopQuery(document.querySelectorAll(query), icon => {
     const handler = onVisibilityChange(icon, () => {
       anime({
@@ -13,6 +18,8 @@ const animeDraw = (query, svgQuery = '[stroke]') =>
         easing: 'easeInOutSine',
         duration: 1500,
         delay: (el, i) => i * 100,
+        loop,
+        ...animeStuff
       })
       removeEvent('DOMContentLoaded load scroll resize', handler)
     })
