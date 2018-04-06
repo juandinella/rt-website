@@ -9,7 +9,6 @@ const problem = () => {
     nav: false,
     controls: false,
     mouseDrag: true,
-    autoHeight: true,
     loop: false,
     responsive: {
       1024: {
