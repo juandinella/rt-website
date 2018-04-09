@@ -4,6 +4,9 @@ import smoothScroll from './smooth-scroll'
 import lazyImages from './lazyImages'
 
 const general = () => {
+  // Remove no-js for css styling
+  document.documentElement.classList.remove('no-js')
+
   lazyImages()
 
   asyncFonts({

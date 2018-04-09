@@ -23,6 +23,10 @@
     flex-direction: column;
   }
 
+  .no-js .lazyload {
+    display: none;
+  }
+
   img {
     max-width: 100%;
     transition: .2s;
