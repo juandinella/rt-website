@@ -37,6 +37,8 @@
     "gulp-zip": "^4.1.0",
     "gumshoejs": "^3.5.0",
     "headroom.js": "^0.9.4",
+    "jstransformer": "^1.0.0",
+    "jstransformer-markdown-it": "^2.0.0",
     "lazysizes": "^4.0.2",
     "lqip-pug": "^1.0.2",
     "manila-mixins": "^3.7.0",
