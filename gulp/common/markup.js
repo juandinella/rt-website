@@ -4,6 +4,7 @@ const production = config.production
 const pug = require('@pixel2html/pipes').pug
 
 const { blur, icon } = require('./pugHelpers')
+const getFaqs = require('./getFaqs')
 
 gulp.task('markup', () =>
   gulp.src(config.directories.src.markup + '/*.pug')
@@ -13,7 +14,8 @@ gulp.task('markup', () =>
         locals: {
           icon,
           production,
-          blur
+          blur,
+          faqs: getFaqs()
         }
       },
       cssModules: `./${config.directories.src.cssModules}`,
