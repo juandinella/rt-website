@@ -749,9 +749,9 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@pixel2html/babel-preset@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@pixel2html/babel-preset/-/babel-preset-1.1.2.tgz#8596074e50024e773daa11594f46110a98dcf1eb"
+"@pixel2html/babel-preset@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@pixel2html/babel-preset/-/babel-preset-1.1.3.tgz#49dff54c71bd75a5d547e876b913009b7c08a3ef"
   dependencies:
     "@babel/core" "7.0.0-beta.44"
     "@babel/plugin-proposal-class-properties" "7.0.0-beta.44"
@@ -770,13 +770,13 @@
     babel-plugin-transform-dynamic-import "2.0.0"
     babel-plugin-transform-react-remove-prop-types "0.4.13"
 
-"@pixel2html/browserlist@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@pixel2html/browserlist/-/browserlist-1.0.0.tgz#a1271c6d69be0bec9b1e4308165e0a389f33fa5e"
+"@pixel2html/browserlist@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pixel2html/browserlist/-/browserlist-1.0.1.tgz#f4f1a95cb1967ca9890e9efe7562d0d7584694b1"
 
-"@pixel2html/eslint-config@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@pixel2html/eslint-config/-/eslint-config-1.5.0.tgz#1ee02994b18b0a7cb10db7f06a2f93eda7a1e089"
+"@pixel2html/eslint-config@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@pixel2html/eslint-config/-/eslint-config-1.5.1.tgz#8116399106e4b2f8a6f603221b14e8786ae93464"
   dependencies:
     babel-eslint "^8.2.2"
     eslint-config-standard "^11.0.0"
@@ -786,11 +786,11 @@
     eslint-plugin-promise "^3.7.0"
     eslint-plugin-standard "^3.0.1"
 
-"@pixel2html/pipes@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@pixel2html/pipes/-/pipes-2.1.0.tgz#88b9e7de488789b42611f69138038719b7c4f24b"
+"@pixel2html/pipes@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@pixel2html/pipes/-/pipes-2.1.1.tgz#4712ab14b38863e3c0b2a93c90031613924a6f0c"
   dependencies:
-    "@pixel2html/browserlist" "^1.0.0"
+    "@pixel2html/browserlist" "^1.0.1"
     autoprefixer "^8.2.0"
     gulp-concat "^2.6.1"
     gulp-csscomb "^3.0.8"
@@ -812,11 +812,11 @@
     posthtml-img-autosize "^0.1.2"
     sass-module-importer "^1.4.0"
 
-"@pixel2html/stylelint-config@^1.5.3":
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/@pixel2html/stylelint-config/-/stylelint-config-1.5.3.tgz#d2d5bdd08c4f333c9c075236cb01117a2accb5a3"
+"@pixel2html/stylelint-config@^1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@pixel2html/stylelint-config/-/stylelint-config-1.5.4.tgz#d1e53010f88e429683884806d56ed3c5f70a6434"
   dependencies:
-    "@pixel2html/browserlist" "^1.0.0"
+    "@pixel2html/browserlist" "^1.0.1"
     stylelint-config-css-modules "^1.2.0"
     stylelint-config-recommended-scss "^3.1.0"
     stylelint-scss "^2.4.0"
