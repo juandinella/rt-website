@@ -18,3 +18,8 @@ gulp.task('head', () =>
   gulp.src(config.directories.src.base + '/assets/head/**/*')
     .pipe(gulp.dest(config.directories.dist.base + '/assets/head'))
 )
+
+gulp.task('admin', () =>
+  gulp.src('src/admin/**/*')
+    .pipe(gulp.dest('dist/admin'))
+)
