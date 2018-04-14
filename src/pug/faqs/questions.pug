@@ -1,0 +1,18 @@
+each category, index in faqs
+  - var id = category.title.split(' ')[0].toLowerCase()
+  nav(css-module='faqs.navigation.wrapper')
+    .container-620
+      ul(css-module='faqs.navigation.links')
+        each cat, catIn in faqs
+          - var catId = cat.title.split(' ')[0].toLowerCase()
+          if index === catIn
+            li: a.active(href=`#${catId}`)= cat.title
+          else
+            li: a(href=`#${catId}`)= cat.title
+
+  section(id=`#${id}`)
+    .container-620
+      each question in category.questions
+        +faq(question.title)
+          | !{question.body}
+
