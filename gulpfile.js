@@ -32,7 +32,7 @@ const prodTasks = [
 let tasks = [
   'clean',
   config.production ? 'styles:prod' : 'styles',
-  'images', 'head',
+  'images', 'head', 'admin',
   'scripts', 'fonts',
   'markup',
   prod && [...prodTasks]
