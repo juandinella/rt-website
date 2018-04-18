@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: mike3run/rt-website # Path to your Github repository
+  repo: jeualvarez/RT # Path to your Github repository
   branch: master # Branch to update
 
-media_folder: "src/assets/images" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/assets/images" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "src/assets/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "categories" # Used in routes, e.g. /admin/collections/faqs
