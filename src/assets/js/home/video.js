@@ -1,4 +1,4 @@
-import YouTubePlayer from 'youtube-player'
+import Player from '@vimeo/player'
 import { home } from 'styles'
 
 const video = () => {
@@ -6,20 +6,18 @@ const video = () => {
   const button = document.querySelector(`.${intro.button}`)
 
   button.addEventListener('click', async event => {
-    const videoId = button.getAttribute('data-youtube-id')
+    const id = button.getAttribute('data-id')
     const wrapper = document.querySelector(`.${intro.iframe}`)
 
-    const player = YouTubePlayer('youtube-player', {
-      videoId,
-      playerVars: {
-        controls: 0,
-        modestbranding: 1,
-        origin: 0,
-        rel: 0,
-        showInfo: 0
-      }
+    const vimeo = document.querySelector('#vimeo-player')
+
+    const player = new Player(vimeo, {
+      id,
+      title: false,
+      autoplay: true,
+      byline: false,
     })
-    await player.playVideo()
+    await player.play()
     // Button pls die in peace now...
     button.parentNode.removeChild(button)
     // responsive iframe show yourself!
