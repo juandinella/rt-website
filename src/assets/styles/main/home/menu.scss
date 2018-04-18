@@ -58,6 +58,9 @@
     line-height: 28px;
     font-weight: 600;
     color: $cool-gray;
+    &:hover, &:focus {
+      color: $black;
+    }
   }
 }
 
@@ -74,6 +77,14 @@
 
   li + li {
     margin-left: 24px;
+  }
+
+  a:hover, a:focus {
+    :global {
+      [fill]:not('.paper') {
+        fill: $black;
+      }
+    }
   }
 }
 
