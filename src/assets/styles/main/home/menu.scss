@@ -81,7 +81,7 @@
 
   a:hover, a:focus {
     :global {
-      [fill]:not('.paper') {
+      [fill]:not(.paper) {
         fill: $black;
       }
     }

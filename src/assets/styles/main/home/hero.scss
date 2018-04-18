@@ -95,6 +95,10 @@
       }
     }
   }
+
+  a:hover, a:focus {
+    color: $black;
+  }
 }
 
 .subtitle {
