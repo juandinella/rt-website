@@ -27,7 +27,6 @@ const animations = () => {
   })
   animeDraw({
     query: `.${home.how.infographic} .ethereum`,
-    svgQuery: 'polygon'
   })
 }
 

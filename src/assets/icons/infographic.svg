@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="920" height="387" viewBox="0 0 920 387">
   <defs>
-    <circle id="infographic-a" cx="8" cy="8" r="8"/>
-    <circle id="infographic-b" cx="8" cy="8" r="8"/>
-    <circle id="infographic-c" cx="3" cy="88" r="3"/>
-    <circle id="infographic-d" cx="23" cy="3" r="3"/>
-    <circle id="infographic-e" cx="3" cy="88" r="3"/>
-    <circle id="infographic-f" cx="23" cy="3" r="3"/>
-    <circle id="infographic-g" cx="3" cy="88" r="3"/>
-    <circle id="infographic-h" cx="23" cy="3" r="3"/>
-    <circle id="infographic-i" cx="3" cy="88" r="3"/>
-    <circle id="infographic-j" cx="23" cy="3" r="3"/>
+    <circle id="infographic-new-a" cx="8" cy="8" r="8"/>
+    <circle id="infographic-new-b" cx="8" cy="8" r="8"/>
+    <circle id="infographic-new-c" cx="3" cy="88" r="3"/>
+    <circle id="infographic-new-d" cx="23" cy="3" r="3"/>
+    <circle id="infographic-new-e" cx="3" cy="88" r="3"/>
+    <circle id="infographic-new-f" cx="23" cy="3" r="3"/>
+    <circle id="infographic-new-g" cx="3" cy="88" r="3"/>
+    <circle id="infographic-new-h" cx="23" cy="3" r="3"/>
+    <circle id="infographic-new-i" cx="3" cy="88" r="3"/>
+    <circle id="infographic-new-j" cx="23" cy="3" r="3"/>
   </defs>
   <g fill="none" fill-rule="evenodd" transform="translate(0 -4)">
     <g transform="translate(0 84)">
@@ -47,7 +47,7 @@
           <polyline stroke-linejoin="round" points="89 0 92 3 89 6"/>
         </g>
         <g transform="translate(38 20)">
-          <use fill="#F3B65E" xlink:href="#infographic-a"/>
+          <use fill="#F3B65E" xlink:href="#infographic-new-a"/>
           <circle cx="8" cy="8" r="10" stroke="#F0F3F5" stroke-width="4"/>
           <circle cx="8" cy="8" r="5" fill="#CD984B"/>
         </g>
@@ -55,12 +55,12 @@
       <g transform="translate(304)">
         <rect width="312" height="224" fill="#E62249" rx="5"/>
         <text fill="#FFF" font-family="SourceSansPro-Black, Source Sans Pro" font-size="12" font-weight="700">
-          <tspan x="191.372" y="174">Blockchain</tspan>
+          <tspan x="191.372" y="154">Blockchain</tspan>
         </text>
         <text fill="#FFF" font-family="SourceSansPro-Black, Source Sans Pro" font-size="12" font-weight="700">
-          <tspan x="64.516" y="174">Ethereum</tspan>
+          <tspan x="46.948" y="154">Smart Contracts</tspan>
         </text>
-        <g transform="translate(191 92)">
+        <g transform="translate(191 71)">
           <circle cx="30" cy="30" r="30" fill="#B22240" opacity=".65"/>
           <g stroke="#FFF" stroke-width="2" transform="translate(14 14)" class="blockchain">
             <circle cx="16" cy="29" r="3"/>
@@ -79,19 +79,27 @@
             <polyline stroke-linecap="round" points="8.484 13.048 8.688 12.938 9.5 12.501 10.313 12.064 10.516 11.954" transform="matrix(-1 0 0 1 19 0)"/>
           </g>
         </g>
-        <path fill="#FFF" d="M155,121 L155,119 C155,118.447715 155.447715,118 156,118 C156.552285,118 157,118.447715 157,119 L157,121 L159,121 C159.552285,121 160,121.447715 160,122 C160,122.552285 159.552285,123 159,123 L157,123 L157,125 C157,125.552285 156.552285,126 156,126 C155.447715,126 155,125.552285 155,125 L155,123 L153,123 C152.447715,123 152,122.552285 152,122 C152,121.447715 152.447715,121 153,121 L155,121 Z"/>
-        <g transform="translate(61 92)">
+        <path fill="#FFF" d="M155,100 L155,98 C155,97.4477153 155.447715,97 156,97 C156.552285,97 157,97.4477153 157,98 L157,100 L159,100 C159.552285,100 160,100.447715 160,101 C160,101.552285 159.552285,102 159,102 L157,102 L157,104 C157,104.552285 156.552285,105 156,105 C155.447715,105 155,104.552285 155,104 L155,102 L153,102 C152.447715,102 152,101.552285 152,101 C152,100.447715 152.447715,100 153,100 L155,100 Z"/>
+        <g transform="translate(61 71)">
           <circle cx="30" cy="30" r="30" fill="#B22240" opacity=".65"/>
-          <g stroke="#FFF" stroke-linecap="round" stroke-width="2" transform="translate(19 12.5)" class="ethereum">
-            <polygon stroke-linejoin="round" points=".5 16.3 11 0 21.5 16.3 11 22"/>
-            <path d="M11.0016713,0.5 L10.9983287,21.5"/>
-            <polyline points="1 16 11 11.5 21 16"/>
-            <polygon stroke-linejoin="round" points=".75 21 11 26.6 21.25 21 10.998 34.605"/>
-            <path d="M11.0016713,26.5 L10.9983287,32.5"/>
+          <g transform="translate(17 13)" class="ethereum">
+            <rect width="24" height="32" x="1" y="1" stroke="#FFF" stroke-width="2" rx="7.5"/>
+            <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15,7 L12.8505115,9.57938624 C12.6737294,9.79152469 12.3584471,9.82018672 12.1463086,9.64340468 C12.1346988,9.63372985 12.1235336,9.62353363 12.1128474,9.61284743 L11,8.5"/>
+            <g fill="#FFF" transform="translate(6 15)">
+              <rect width="14" height="2" rx="1"/>
+              <rect width="14" height="2" y="5" rx="1"/>
+              <rect width="6" height="2" y="10" rx="1"/>
+            </g>
+            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(15 24)">
+              <path d="M3.5 3.5L.5.5M3.5.5L.5 3.5"/>
+            </g>
           </g>
         </g>
+        <text fill="#FFF" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="14" font-weight="bold">
+          <tspan x="88.128" y="195">Powered by Ethereum</tspan>
+        </text>
         <text fill="#FFF" font-family="SourceSansPro-Black, Source Sans Pro" font-size="15" font-weight="700" letter-spacing="3.5">
-          <tspan x="69.86" y="60">RENDER NETWOR</tspan> <tspan x="232.72" y="60">K</tspan>
+          <tspan x="69.86" y="39">RENDER NETWOR</tspan> <tspan x="232.72" y="39">K</tspan>
         </text>
       </g>
       <g transform="translate(200 84)">
@@ -106,7 +114,7 @@
           <polyline stroke-linejoin="round" points="89 0 92 3 89 6"/>
         </g>
         <g transform="translate(38 20)">
-          <use fill="#F3B65E" xlink:href="#infographic-b"/>
+          <use fill="#F3B65E" xlink:href="#infographic-new-b"/>
           <circle cx="8" cy="8" r="10" stroke="#F0F3F5" stroke-width="4"/>
           <circle cx="8" cy="8" r="5" fill="#CD984B"/>
         </g>
@@ -121,10 +129,10 @@
     <g transform="translate(27 285)">
       <g transform="translate(200)">
         <path stroke="#C9D5DE" stroke-dasharray="3 7" stroke-linecap="round" stroke-width="2" d="M23,10 L23,78 C23,83.5228475 18.5228475,88 13,88 L10,88"/>
-        <use fill="#90A4B3" xlink:href="#infographic-c"/>
+        <use fill="#90A4B3" xlink:href="#infographic-new-c"/>
         <circle cx="3" cy="88" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         <g>
-          <use fill="#90A4B3" xlink:href="#infographic-d"/>
+          <use fill="#90A4B3" xlink:href="#infographic-new-d"/>
           <circle cx="23" cy="3" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         </g>
       </g>
@@ -135,10 +143,10 @@
     <g transform="translate(561 285)">
       <g transform="translate(200)">
         <path stroke="#C9D5DE" stroke-dasharray="3 7" stroke-linecap="round" stroke-width="2" d="M23,10 L23,78 C23,83.5228475 18.5228475,88 13,88 L10,88"/>
-        <use fill="#90A4B3" xlink:href="#infographic-e"/>
+        <use fill="#90A4B3" xlink:href="#infographic-new-e"/>
         <circle cx="3" cy="88" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         <g>
-          <use fill="#90A4B3" xlink:href="#infographic-f"/>
+          <use fill="#90A4B3" xlink:href="#infographic-new-f"/>
           <circle cx="23" cy="3" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         </g>
       </g>
@@ -149,10 +157,10 @@
     <g transform="translate(667)">
       <g transform="translate(0 16)">
         <path stroke="#C9D5DE" stroke-dasharray="3 7" stroke-linecap="round" stroke-width="2" d="M3,81 L3,13 C3,7.4771525 7.4771525,3 13,3 L16,3"/>
-        <use fill="#90A4B3" xlink:href="#infographic-g"/>
+        <use fill="#90A4B3" xlink:href="#infographic-new-g"/>
         <circle cx="3" cy="88" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         <g>
-          <use fill="#90A4B3" xlink:href="#infographic-h"/>
+          <use fill="#90A4B3" xlink:href="#infographic-new-h"/>
           <circle cx="23" cy="3" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         </g>
       </g>
@@ -163,10 +171,10 @@
     <g transform="translate(133)">
       <g transform="translate(0 16)">
         <path stroke="#C9D5DE" stroke-dasharray="3 7" stroke-linecap="round" stroke-width="2" d="M3,81 L3,13 C3,7.4771525 7.4771525,3 13,3 L16,3"/>
-        <use fill="#90A4B3" xlink:href="#infographic-i"/>
+        <use fill="#90A4B3" xlink:href="#infographic-new-i"/>
         <circle cx="3" cy="88" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         <g>
-          <use fill="#90A4B3" xlink:href="#infographic-j"/>
+          <use fill="#90A4B3" xlink:href="#infographic-new-j"/>
           <circle cx="23" cy="3" r="4.5" stroke="#F0F3F5" stroke-width="3"/>
         </g>
       </g>
