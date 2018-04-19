@@ -37,6 +37,12 @@ function getFaqs () {
     category.questions.push(question)
   })
 
+  // Finally sort the questions
+  faqs.forEach(category => {
+    const questions = category.questions
+    questions.sort((a, b) => a.order - b.order)
+  })
+
   return faqs
 }
 
