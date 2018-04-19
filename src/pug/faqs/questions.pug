@@ -10,7 +10,7 @@ each category, index in faqs
           else
             li: a(href=`#${catId}`)= cat.title
 
-  section(id=`#${id}`)
+  section(id=id)
     .container-620
       each question in category.questions
         +faq(question.title)
