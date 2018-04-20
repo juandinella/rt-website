@@ -1,0 +1,6 @@
+{
+  "title": "Testing order",
+  "body": "Should be the last one for this category.",
+  "parent": "Value Proposition",
+  "order": 3
+}
