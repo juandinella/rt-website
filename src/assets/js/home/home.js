@@ -8,7 +8,7 @@ import newsletter from './newsletter'
 import subscribe from './subscribe'
 import mobileLinks from './mobileLinks'
 import overlays from './overlays'
-import status from './status'
+// import projectStatus from './status'
 import animations from './animations'
 
 const home = () => {
@@ -16,7 +16,7 @@ const home = () => {
   burger()
   mobileLinks()
   animations()
-  status()
+  // projectStatus()
   overlays()
   video()
   team()

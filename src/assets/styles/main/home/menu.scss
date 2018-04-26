@@ -100,6 +100,11 @@
   justify-content: center;
   border-radius: 3px;
   padding: 12px 18px;
+  transition: .3s;
+
+  &:focus, &:hover {
+    background: darken($red, 8%);
+  }
 
   @include breakpoint(desktop) {
     display: none;
