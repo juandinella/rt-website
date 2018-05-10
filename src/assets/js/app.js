@@ -8,16 +8,14 @@ const app = () => {
 
   // Homepage
   if (document.querySelector('#hero')) {
-  import(/* webpackChunkName: "home" */ './home').then(home => {
-    home.default()
-  })
+    import(/* webpackChunkName: "home" */ './home')
+      .then(home => home.default())
   }
 
   // Homepage
   if (document.querySelector('#faqs-page')) {
-  import(/* webpackChunkName: "faqs" */ './faqs').then(faqs => {
-    faqs.default()
-  })
+    import(/* webpackChunkName: "faqs" */ './faqs')
+      .then(faqs => faqs.default())
   }
 }
 
