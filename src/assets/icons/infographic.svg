@@ -137,7 +137,9 @@
         </g>
       </g>
       <text fill="#778B9A" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14">
-        <tspan x="8.378" y="64">Once completed and delivered, </tspan> <tspan x="19.466" y="83">tokens are transferred via the </tspan> <tspan x="100.876" y="102">smart contract.</tspan>
+        <tspan x="8.378" y="64">Once completed and delivered, </tspan>
+        <tspan x="6.466" y="83">RNDR tokens are transferred via </tspan>
+        <tspan x="78.876" y="102">the smart contract.</tspan>
       </text>
     </g>
     <g transform="translate(561 285)">
@@ -151,7 +153,8 @@
         </g>
       </g>
       <text fill="#778B9A" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14">
-        <tspan x="25.612" y="83">GPU lender performs task to </tspan> <tspan x="36.504" y="102">process the requested job.</tspan>
+        <tspan x="10.612" y="83">GPU owner uses OctaneRender </tspan>
+        <tspan x="16.504" y="102">to process the requested job.</tspan>
       </text>
     </g>
     <g transform="translate(667)">
@@ -165,7 +168,10 @@
         </g>
       </g>
       <text fill="#778B9A" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14">
-        <tspan x="36" y="14">Task is quoted a price in RNDR </tspan> <tspan x="36" y="33">tokens. Details attached to </tspan> <tspan x="36" y="52">smart contract and sent across </tspan> <tspan x="36" y="71">the Render Network.</tspan>
+        <tspan x="36" y="14">Protocol calculates the amount of </tspan>
+        <tspan x="36" y="33">RNDR required to perform the job.</tspan>
+        <tspan x="36" y="52">Details attached to a smart contract</tspan>
+        <tspan x="36" y="71">and sent across the Render Network.</tspan>
       </text>
     </g>
     <g transform="translate(133)">
@@ -179,7 +185,8 @@
         </g>
       </g>
       <text fill="#778B9A" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14">
-        <tspan x="36" y="14">User submits a </tspan> <tspan x="36" y="33">render task in ORC.</tspan>
+        <tspan x="36" y="14">User submits a job</tspan>
+        <tspan x="36" y="33">in ORC.</tspan>
       </text>
     </g>
   </g>
